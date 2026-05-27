@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>09 · Síntese Final — Dossiê de Carreira</title>
+  <meta name="description" content="Síntese final: comparação entre início e fim do semestre e carta profissional." />
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body data-page="09" data-root="..">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div id="site-header"></div>
+
+  <main id="conteudo">
+    <header class="page-hero shell" data-reveal-group>
+      <p class="page-hero__index" data-reveal>09 / 09</p>
+      <h1 data-reveal>Síntese Final</h1>
+      <p class="page-hero__intro" data-reveal>
+        Olhar para trás e medir o quanto andei. Onde eu comecei, onde cheguei e
+        que profissional quero me tornar.
+      </p>
+    </header>
+
+    <!-- COMPARAÇÃO INÍCIO × FIM -->
+    <section class="section shell">
+      <div class="section__head">
+        <p class="kicker">Evolução no semestre</p>
+        <h2>Início × Final</h2>
+        <p class="section__note">Mostre o processo, não só o resultado. Compare como você
+        pensava e agia no começo com onde chegou.</p>
+      </div>
+
+      <div class="compare" data-reveal>
+        <div class="compare__col">
+          <h4>No início do semestre</h4>
+          <div class="fill"><span class="fill__tag">A preencher</span>
+            <p class="fill__hint">Como você se via, o que sabia, quais eram suas dificuldades
+            no começo da disciplina.</p></div>
+        </div>
+        <div class="compare__vs" aria-hidden="true">→</div>
+        <div class="compare__col">
+          <h4>No final do semestre</h4>
+          <div class="fill"><span class="fill__tag">A preencher</span>
+            <p class="fill__hint">O que mudou: novas habilidades, mudanças de comportamento,
+            descobertas sobre si.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTA PROFISSIONAL -->
+    <section class="section shell">
+      <div class="letter" data-reveal>
+        <p class="kicker" style="justify-content:center">Carta profissional</p>
+        <p class="letter__q">Que profissional quero me tornar?</p>
+        <div class="fill"><span class="fill__tag">A preencher · carta final</span>
+          <p class="fill__hint">Escreva uma carta para você mesmo. Responda à pergunta acima
+          com honestidade e profundidade, conectando o que viveu no semestre com a direção
+          que quer seguir. Esta é a página que fecha o dossiê — vale a pena caprichar.</p></div>
+        <p class="letter__sign">— Gabriel Rodrigues, em <span id="data-carta"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // Preenche automaticamente o mês/ano da assinatura da carta.
+    document.getElementById("data-carta").textContent =
+      new Date().toLocaleDateString("pt-BR", { month: "long", year: "numeric" });
+  </script>
+</body>
+</html>
